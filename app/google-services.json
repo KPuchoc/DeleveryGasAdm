@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "444644786760",
+    "firebase_url": "https://sportwearstoreolivos-default-rtdb.firebaseio.com",
+    "project_id": "sportwearstoreolivos",
+    "storage_bucket": "sportwearstoreolivos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444644786760:android:1e2d82677c32e393a78e7d",
+        "android_client_info": {
+          "package_name": "com.example.androidsportswearserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444644786760-1cen38r94crk5ptj7jbs7meq2ttm9il5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidsportswearserver",
+            "certificate_hash": "5b93d16f8753bd05bfc3e3e65f6cf6738a6066fb"
+          }
+        },
+        {
+          "client_id": "444644786760-c3hecnj2u8mnnj0ncrnol61af2nn198t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8bMiloAXYfZ4-xtQZb4ALc5UL1FAVMbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444644786760-c3hecnj2u8mnnj0ncrnol61af2nn198t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444644786760:android:50c9737c7f11800fa78e7d",
+        "android_client_info": {
+          "package_name": "com.example.sportwearstoreolivos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444644786760-c3hecnj2u8mnnj0ncrnol61af2nn198t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8bMiloAXYfZ4-xtQZb4ALc5UL1FAVMbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444644786760-c3hecnj2u8mnnj0ncrnol61af2nn198t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

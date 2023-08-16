@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignIn">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logos"
+
+
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/txtSignIn"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/slogan"
+            android:textColor="@color/overlayBackground"
+            android:textSize="55dp"
+            android:textStyle="bold"></TextView>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Mobile Number"
+            android:inputType="phone"
+            android:text="924477059"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="34sp"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabelText="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/black"
+            app:met_singleLineEllipsis="true"></com.rengwuxian.materialedittext.MaterialEditText>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPasswor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="1234"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="34sp"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabelText="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/black"
+            app:met_singleLineEllipsis="true"></com.rengwuxian.materialedittext.MaterialEditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BtnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#F44336"
+        android:text="@string/SingIn"
+        app:cornerRadius="4dp"
+        app:shadowColor="@color/black"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"></Button>
+</RelativeLayout>

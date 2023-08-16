@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidSportswearServer</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="place_Order">Tomar Orden</string>
+    <string name="SingIn">Iniciar Sesion</string>
+    <string name="SingUp">Cerrar Sesion</string>
+    <string name="Altocontraste">Alto Constraste</string>
+    <string name="language">Languaje</string>
+    <string name="Tamañodefuente">Tamaño de Fuente</string>
+    <string name="Refresh">Actualizar</string>
+    <string name="ChangePassword">Cambiar Contraseña</string>
+    <string name="Cart">Carrito</string>
+    <string name="Orders">Pedidos</string>
+    <string name="SingOut">Cerrar Sesion</string>
+</resources>

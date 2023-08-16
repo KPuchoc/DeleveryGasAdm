@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">AndroidSportswearServer</string>
+    <string name="slogan" translatable="false">Sportswear Store</string>
+    <string name="title_activity_home" translatable="false">Home</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="place_Order">Place Order</string>
+    <string name="SingIn">Sing In</string>
+    <string name="SingUp">Sing Up</string>
+    <string name="Altocontraste">High contrast</string>
+    <string name="language">Languaje</string>
+    <string name="Tamañodefuente">Text Size</string>
+    <string name="Refresh">Refresh</string>
+    <string name="ChangePassword">Change Password</string>
+    <string name="Cart">Cart</string>
+    <string name="Orders">Orders</string>
+
+    <string name="SingOut">Sing Out</string>
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="title_activity_sportswear_list" translatable="false">SportswearList</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_order_status" translatable="false">OrderStatus</string>
+    <string name="title_activity_tracking_order" translatable="false">TrackingOrder</string>
+    <string name="title_activity_traking_order" translatable="false">TrakingOrder</string>
+</resources>
