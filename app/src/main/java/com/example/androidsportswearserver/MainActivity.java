@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         btnSignIn=findViewById(R.id.btnSignIn);
 
         txtSlogan=findViewById(R.id.txtSlogan);

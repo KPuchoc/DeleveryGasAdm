@@ -108,6 +108,7 @@ public class Home extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
         View headerView=navigationView.getHeaderView(0);
         txtFullName=(TextView) headerView.findViewById(R.id.ttxtFullName);
 

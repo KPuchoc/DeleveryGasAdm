@@ -120,10 +120,11 @@ public class OrderStatus extends AppCompatActivity {
         LayoutInflater inflater = this.getLayoutInflater ();
         final View view= inflater.inflate (R.layout.update_order_layout, null);
         spinner=(MaterialSpinner) view.findViewById(R.id.statusSpinner);
-        spinner.setItems("Placed","On My Way","Shipped");
+        spinner.setItems("En Espera","En camino","Enviado");
         alertDialog.setView(view);
 
         final String localKey=key;
+
         alertDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {

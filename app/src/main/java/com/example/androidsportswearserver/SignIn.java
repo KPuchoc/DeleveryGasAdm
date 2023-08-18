@@ -68,7 +68,7 @@ public class SignIn extends AppCompatActivity {
                             mDialog.dismiss();
                             User user = dataSnapshot.child(localPhone).getValue(User.class);
                             user.setPhone(localPhone);
-                            if(Boolean.parseBoolean(user.getIsStaff()))
+                            if(Boolean.parseBoolean(user.getIsStaff())) //cuenta de adm debe ser verdadedo
                             {
                                 if(user.getPassword().equals(localPassword))
                                 {
