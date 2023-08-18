@@ -7,12 +7,15 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.location.Criteria;
 import android.location.Location;
 
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -120,7 +123,7 @@ public class TrakingOrder extends FragmentActivity implements OnMapReadyCallback
                 final double longitude=mLastLocation.getLongitude();
 
                 LatLng yourLocation=new LatLng(latitude, longitude);
-                mMap.addMarker(new MarkerOptions().position(yourLocation).title("Your Location"));
+                mMap.addMarker(new MarkerOptions().position(yourLocation).title("Tu Location"));
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(yourLocation));
                 mMap.animateCamera(CameraUpdateFactory.zoomTo(17.0f));
 
@@ -254,13 +257,35 @@ public class TrakingOrder extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
 //        Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-12.047529988551409, -75.19879976174951);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Tu Ubicacion"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(17.0f));
+//        LatLng sydney = new LatLng(-12.047529988551409, -75.19879976174951);
+//        mMap.addMarker(new MarkerOptions().position(sydney).title("Tu Ubicacion"));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+//        mMap.animateCamera(CameraUpdateFactory.zoomTo(17.0f));
+       //
 
+        // Verifica los permisos de ubicación antes de continuar
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
 
-       // drawRoute(sydney,Common.currentRequest.getAddress());
+            mMap.setMyLocationEnabled(true); // Habilita el marcador de "Mi ubicación"
+
+            // Configura la actualización de la cámara para seguir la ubicación en tiempo real
+            LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+            Criteria criteria = new Criteria();
+            String bestProvider = locationManager.getBestProvider(criteria, true);
+            Location location = locationManager.getLastKnownLocation(bestProvider);
+            if (location != null) {
+                LatLng myLatLng = new LatLng(location.getLatitude(), location.getLongitude());
+                mMap.addMarker(new MarkerOptions().position(myLatLng).title("Tu Ubicacion"));
+                mMap.moveCamera(CameraUpdateFactory.newLatLng(myLatLng));
+                mMap.animateCamera(CameraUpdateFactory.zoomTo(17.0f));
+
+                drawRoute(myLatLng,Common.currentRequest.getAddress());
+            }
+        } else {
+            // Si los permisos de ubicación no están otorgados, solicítalos
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_PERMISSION_REQUEST);
+        }
 
 
     }

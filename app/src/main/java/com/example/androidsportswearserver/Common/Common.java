@@ -18,7 +18,9 @@ public class Common {
     public static final String DELETE="Delete";
 
     public static final int PICK_IMAGE_REQUEST=71;
-    public static final String baseUrl ="https://googleapis.com";
+
+
+    public static final String baseUrl ="https://maps.googleapis.com";
 
     public static String convertCodeToStatus(String code){
         if(code.equals("0"))
